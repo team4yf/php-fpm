@@ -1,6 +1,6 @@
 FROM php:5.6.32-fpm
 
-LABEL maintainer="Vincent Letourneau <vincent@nanoninja.com>"
+LABEL maintainer="Wangfan <wangfan@126.com>"
 
 RUN apt-get update && apt-get upgrade -y \
     && apt-get install -y \
@@ -48,6 +48,7 @@ RUN apt-get update && apt-get upgrade -y \
     json \
     mbstring \
     mcrypt \
+    mysql \
     mysqli \
     opcache \
     pdo_mysql \
